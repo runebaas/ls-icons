@@ -359,7 +359,7 @@ static t_file_matching file_matches[] = {
         {OCT_FILE_ZIP,        MATCH(S(".xpi")),                                                                 ORANGE},
         {OCT_FILE_ZIP,        MATCH(S(".iso")),                                                                 BLUE},
         {OCT_FILE_ZIP,        MATCH(S(".nzb")),                                                                 LIGHT_MAROON},
-        {OCT_FILE_ZIP,        MATCH(S(".bz2"))                                                                  DARK_CYAN},
+        {OCT_FILE_ZIP,        MATCH(S(".bz2")),                                                                 DARK_CYAN},
         {OCT_FILE_ZIP,        MATCH(S(".tar")),                                                                 DARK_BLUE},
         {OCT_FILE_ZIP,        MATCH(S(".apk")),                                                                 RED},
         {OCT_FILE_ZIP,        MATCH(S(".7z")),                                                                  MAROON},
