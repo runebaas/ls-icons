@@ -161,7 +161,7 @@ static t_file_matching file_matches[] = {
         {MFIZZ_CSHARP,        MATCH(S(".cs", ".csproj")),                                                       GREEN},
         {MFIZZ_REDIS,         MATCH(S(".rdb")),                                                                 DARK_RED},
         {MFIZZ_NPM,           MATCH(F("package.json", "package-lock.json")),                                    RED},
-        {MFIZZ_GIT,           MATCH(F(".git", ".gitignore", ".gitattributes", ".gitconfig")),                   RED},
+        {MFIZZ_GIT,           MATCH(P(".git")),                                                                 RED},
         {FILE_VIDEO,          MATCH(S(".mpeg", ".mpg")),                                                        RED},
         {FILE_VIDEO,          MATCH(S(".webm")),                                                                DARK_BLUE},
         {FILE_VIDEO,          MATCH(S(".flv")),                                                                 RED},
