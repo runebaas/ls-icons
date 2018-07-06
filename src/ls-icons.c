@@ -159,6 +159,7 @@ typedef struct {
 static t_file_matching file_matches[] = {
 
         {MFIZZ_CSHARP,        MATCH(S(".cs", ".csproj")),                                                       GREEN},
+        {FILE_YARN,           MATCH(P("yarn")),                                                                 LIGHT_BLUE},
         {MFIZZ_REDIS,         MATCH(S(".rdb")),                                                                 DARK_RED},
         {MFIZZ_NPM,           MATCH(F("package.json", "package-lock.json")),                                    RED},
         {MFIZZ_GIT,           MATCH(P(".git")),                                                                 RED},
