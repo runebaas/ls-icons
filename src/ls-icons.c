@@ -158,8 +158,10 @@ typedef struct {
 
 static t_file_matching file_matches[] = {
 
-        {MFIZZ_CSHARP,        MATCH(S(".cs", ".csproj")),                                                       GREEN},
+        {MFIZZ_CSHARP,        MATCH(S(".cs")),                                                                  GREEN},
+        {DEV_DOTNET,          MATCH(S(".csproj", ".sln", ".sln.DotSettings", ".sln.DotSettings.user")),         CYAN},
         {FILE_YARN,           MATCH(P("yarn")),                                                                 LIGHT_BLUE},
+        {FILE_POWERSHELL,     MATCH(S(".ps1", ".psm1")),                                                        CYAN},
         {MFIZZ_REDIS,         MATCH(S(".rdb")),                                                                 DARK_RED},
         {MFIZZ_NPM,           MATCH(F("package.json", "package-lock.json")),                                    RED},
         {MFIZZ_GIT,           MATCH(P(".git")),                                                                 RED},
@@ -277,7 +279,7 @@ static t_file_matching file_matches[] = {
         {MFIZZ_CLOJURE,       MATCH(S(".cl2")),                                                                 PURPLE},
         {MFIZZ_CLOJURE,       MATCH(S(".clj")),                                                                 BLUE},
         {MD_VPN_KEY,          MATCH(P("id_rsa")),                                                               RED},
-        {MD_VPN_KEY,          MATCH(S(".crt")),                                                                 BLUE},
+        {MD_VPN_KEY,          MATCH(S(".crt", ".pfx")),                                                         BLUE},
         {MD_VPN_KEY,          MATCH(S(".pem")),                                                                 ORANGE},
         {MD_VPN_KEY,          MATCH(S(".pub")),                                                                 YELLOW},
         {MD_VPN_KEY,          MATCH(S(".key")),                                                                 BLUE},
