@@ -161,6 +161,7 @@ static t_file_matching file_matches[] = {
         {MFIZZ_CSHARP,        MATCH(S(".cs")),                                                                  GREEN},
         {DEV_DOTNET,          MATCH(S(".csproj", ".sln", ".sln.DotSettings", ".sln.DotSettings.user")),         CYAN},
         {FILE_YARN,           MATCH(P("yarn")),                                                                 LIGHT_BLUE},
+        {MFIZZ_RUST,          MATCH(S(".rs")),                                                                  DARK_ORANGE},
         {FILE_POWERSHELL,     MATCH(S(".ps1", ".psm1")),                                                        CYAN},
         {MFIZZ_REDIS,         MATCH(S(".rdb")),                                                                 DARK_RED},
         {MFIZZ_NPM,           MATCH(F("package.json", "package-lock.json")),                                    RED},
